@@ -1,0 +1,116 @@
+.card {
+  display: grid;
+  grid-template-areas: "imagem info-card botao-fechar" "sinopse sinopse sinopse";
+  grid-row-gap: 1rem;
+  min-height: 30rem;
+  max-height: 90%;
+  grid-template-columns: 1fr 3fr 20px;
+  grid-template-rows: min-content;
+  border-radius: 8px;
+  background: #fff;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 24px;
+  z-index: 11;
+}
+
+.titulo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6C63FF;
+  padding-top: 16px;
+}
+
+.informacoes {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8B8B8B;
+  padding-bottom: 4px;
+}
+
+.resultado {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8B8B8B;
+  padding-bottom: 8px;
+}
+
+.detalhes {
+  background: #6C63FF;
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.info-card {
+  background: #FFFFFF;
+  width: 12rem;
+  padding-left: 1.5rem;
+  grid-area: info-card;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.imagem {
+  height: 18rem;
+  grid-area: imagem;
+  padding-top: 1rem;
+}
+
+.sinopse {
+  grid-area: sinopse;
+  padding-bottom: 0;
+}
+
+.overlay {
+  background: #000;
+  height: 100vh;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.botao-fechar {
+  width: 24px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  border: none;
+  color: #444444;
+  opacity: 0.5;
+  cursor: pointer;
+  background: none;
+  grid-area: botao-fechar;
+  margin-top: 0.5rem;
+}
+
+.detalhes:hover {
+  background: #050C42;
+}
+
+

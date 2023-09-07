@@ -1,0 +1,80 @@
+.card-livro {
+  display: flex;
+  width: 384px;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
+  margin: 24px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+img {
+  min-width: 198px;
+}
+
+.card {
+  display: flex;
+  width: 384px;
+  height: 310px;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
+  margin: 24px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.info-card {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 6px;
+  background: #FFFFFF;
+  border-radius: 0px 8px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.titulo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6C63FF;
+}
+
+.informacoes {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8B8B8B;
+}
+
+.resultado {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8B8B8B;
+}
+
+button {
+  background: #6C63FF;
+  width: 156px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #050C42;
+}

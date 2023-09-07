@@ -1,0 +1,19 @@
+<div class="card">
+  <img
+    src="{{ livro != undefined ? livro : 'assets/imagens/capa-indisponivel.png'}}"
+    alt="Capa do livro">
+  <div class="info-card">
+    <p class="titulo">{{ livro }}</p>
+    <p class="informacoes">Autoria:</p>
+    <p class="resultado">{{ livro }}</p>
+    <p class="informacoes">Data de publicação:</p>
+    <p class="resultado">{{ livro }}</p>
+    <p class="informacoes">Editora:</p>
+    <p class="resultado">{{ livro }}</p>
+    <button>Mais detalhes</button>
+  </div>
+</div>
+<div *ngIf="modalAberto">
+  <app-modal-livro [livro]="livro" (mudouModal)="onModelChange($event)"></app-modal-livro>
+</div>
+

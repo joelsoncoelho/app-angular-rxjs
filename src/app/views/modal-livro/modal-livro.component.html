@@ -1,0 +1,25 @@
+<section *ngIf="statusModal" class="container {{ esconderScroll() }}">
+  <div class="card">
+    <img class="imagem" src="{{ livro != undefined ? livro
+      : 'assets/imagens/capa-indisponivel.png'
+    }}" alt="Capa do livro">
+    <div class="info-card">
+      <p class="titulo">{{ livro }}</p>
+      <p class="informacoes">Autoria:</p>
+      <p class="resultado">{{ livro }}</p>
+      <p class="informacoes">Data de publicação:</p>
+      <p class="resultado">{{ livro }}</p>
+      <p class="informacoes">Editora:</p>
+      <p class="resultado">{{ livro }}</p>
+      <button (click)="lerPrevia()" class="detalhes">Ler prévia</button>
+    </div>
+      <button (click)="fecharModal()" class="botao-fechar" >
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    <div class="sinopse">
+      <h4 class="informacoes">Sinopse</h4>
+      <p class="resultado">{{ livro }}</p>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
