@@ -5,7 +5,7 @@ const body: any = document.querySelector("body");
 @Component({
   selector: 'app-modal-livro',
   templateUrl: './modal-livro.component.html',
-  styleUrls: ['./modal-livro.component.css']
+  styleUrls: ['./modal-livro.component.scss']
 })
 export class ModalLivroComponent {
 
