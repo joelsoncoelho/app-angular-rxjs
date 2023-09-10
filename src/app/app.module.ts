@@ -12,6 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LivroComponent } from './components/livro/livro.component';
 import { LivroService } from './service/livro.service';
+import { AutoriaPipe } from './pipes/autoria.pipe';
+import { EllipsisPipe } from './pipes/ellipsis.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LivroService } from './service/livro.service';
     FooterComponent,
     LivroComponent,
     ListaLivrosComponent,
-    ModalLivroComponent
+    ModalLivroComponent,
+    AutoriaPipe,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,
