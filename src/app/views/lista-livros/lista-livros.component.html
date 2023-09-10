@@ -10,6 +10,14 @@
     </button>
   </div>
   <p>Busque por assunto, autoria, nome...</p>
+  <div class="resultados mensagem-erro" *ngIf="mensagemErro">
+    {{ mensagemErro }}
+  </div>
+  <div
+  class="resultados"
+  *ngIf="totalDeLivros$ | async ">
+    {{ livrosResultado.totalItems}} resultados encontrados
+</div>
 <div class="container-card" *ngIf="livrosEncontrados$ | async as listaLivros, else telaInicial">
   <div *ngFor="let livro of listaLivros">
     <app-livro [livro]="livro"></app-livro>

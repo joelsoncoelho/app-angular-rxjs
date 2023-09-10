@@ -11,16 +11,25 @@ export class LivroService {
   private readonly API = 'https://www.googleapis.com/books/v1/volumes'
 
   constructor(private httpClient: HttpClient) { }
-
-
+/*
   buscar(valorDigitado: string): Observable<Item[]> {
     const params = new HttpParams().append('q', valorDigitado )
     return this.httpClient.get<LivrosResultado>(this.API, { params })
     .pipe(
-    //  tap(retornoAPI => console.log('Fluxo do tap', retornoAPI)),
-      map(resultado => resultado.items),
+    // tap(retornoAPI => console.log('Fluxo do tap', retornoAPI)),
+      map(resultado => resultado.items ?? []),
     //  tap(resultado => console.log('Fluxo após o map', resultado))
     )
   }
+*/
 
+buscar(valorDigitado: string): Observable<LivrosResultado> {
+  const params = new HttpParams().append('q', valorDigitado )
+  return this.httpClient.get<LivrosResultado>(this.API, { params })
+//.pipe(
+  // tap(retornoAPI => console.log('Fluxo do tap', retornoAPI)),
+    //map(resultado => resultado.items ?? []),
+  //  tap(resultado => console.log('Fluxo após o map', resultado))
+//  )
+    }
 }
