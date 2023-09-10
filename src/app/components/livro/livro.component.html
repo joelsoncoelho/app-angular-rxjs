@@ -1,15 +1,15 @@
 <div class="card">
   <img
-    src="{{ livro != undefined ? livro : 'assets/imagens/capa-indisponivel.png'}}"
+    src="{{ livro.thumbnail != undefined ? livro.thumbnail : 'assets/imagens/capa-indisponivel.png'}}"
     alt="Capa do livro">
   <div class="info-card">
-    <p class="titulo">{{ livro }}</p>
+    <p class="titulo">{{ livro.title }}</p>
     <p class="informacoes">Autoria:</p>
-    <p class="resultado">{{ livro }}</p>
+    <p class="resultado">{{ livro.authors }}</p>
     <p class="informacoes">Data de publicação:</p>
-    <p class="resultado">{{ livro }}</p>
+    <p class="resultado">{{ livro.publishedDate }}</p>
     <p class="informacoes">Editora:</p>
-    <p class="resultado">{{ livro }}</p>
+    <p class="resultado">{{ livro.publisher }}</p>
     <button>Mais detalhes</button>
   </div>
 </div>
